@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ruang Kampus — Portal Mahasiswa Malang</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Nunito+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="main.css">
+</head>
+<body class="bg-surface font-sans text-ink antialiased">
+
+<header class="sticky top-0 z-20 border-b border-line bg-surface/95 backdrop-blur">
+  <div class="mx-auto flex max-w-6xl flex-wrap items-center justify-between gap-x-6 gap-y-2 px-6 py-3">
+    <a href="index.html" class="font-display text-xl font-bold text-primary-dark">Ruang Kampus</a>
+    <button id="menu-btn" type="button" aria-controls="menu" aria-expanded="false" aria-label="Buka menu" class="rounded-lg border border-line px-3 py-1.5 text-sm font-semibold text-primary-dark md:hidden">Menu</button>
+    <nav id="menu" class="hidden w-full flex-col gap-1 text-sm md:flex md:w-auto md:flex-row"><a class="rounded-full px-3 py-1.5 text-soft hover:bg-accent/20 hover:text-primary-dark" href="index.html#berita">Berita</a><a class="rounded-full px-3 py-1.5 text-soft hover:bg-accent/20 hover:text-primary-dark" href="index.html#event">Event</a><a class="rounded-full px-3 py-1.5 text-soft hover:bg-accent/20 hover:text-primary-dark" href="index.html#beasiswa">Beasiswa</a><a class="rounded-full px-3 py-1.5 text-soft hover:bg-accent/20 hover:text-primary-dark" href="index.html#lomba">Lomba</a><a class="rounded-full px-3 py-1.5 text-soft hover:bg-accent/20 hover:text-primary-dark" href="index.html#karier">Karier</a><a class="rounded-full px-3 py-1.5 text-soft hover:bg-accent/20 hover:text-primary-dark" href="index.html#kos">Kos</a><a class="rounded-full px-3 py-1.5 text-soft hover:bg-accent/20 hover:text-primary-dark" href="index.html#komunitas">Komunitas</a><a class="rounded-full px-3 py-1.5 text-soft hover:bg-accent/20 hover:text-primary-dark" href="index.html#kontak">Kontak</a>
+  </div>
+</header>
+
+<section class="bg-primary-dark text-white">
+  <div class="mx-auto grid max-w-6xl items-center gap-8 px-6 py-14 md:grid-cols-2">
+    <div>
+      <h1 class="font-display text-4xl font-bold leading-tight md:text-5xl">Semua urusan kuliah di Malang, dalam satu ruang.</h1>
+      <p class="mt-4 max-w-md text-secondary">Berita kampus, beasiswa, lomba, magang, dan kos, dikumpulkan dari kampus-kampus di Malang.</p>
+      <a href="#beasiswa" class="mt-6 inline-block rounded-lg bg-accent px-5 py-2.5 font-semibold text-on-accent hover:brightness-105">Lihat beasiswa</a>
+    </div>
+    <img src="https://loremflickr.com/800/500/university,campus?lock=3" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSvrXbaOicdSLp2e9HBJ23smPGCZ_Pzc_9S-qLyeRsRa7nggnQe5ltcWow&s=10'" alt="Suasana kampus" class="h-64 w-full rounded-2xl object-cover md:h-72">
+  </div>
+</section>
+
+<main class="mx-auto max-w-6xl px-6">
+  <section id="berita" class="py-12"><h2 class="mb-1 font-display text-2xl font-bold text-primary-dark">Berita kampus</h2><p class="mb-6 text-soft">Prestasi dan kabar terbaru dari kampus Malang.</p><div id="grid-berita" class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3"></div></section>
+  <section id="event" class="border-t border-line py-12"><h2 class="mb-1 font-display text-2xl font-bold text-primary-dark">Event</h2><p class="mb-6 text-soft">Acara terbuka yang bisa kamu ikuti bulan ini.</p><div id="grid-event" class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3"></div></section>
+  <section id="beasiswa" class="border-t border-line py-12"><h2 class="mb-1 font-display text-2xl font-bold text-primary-dark">Beasiswa</h2><p class="mb-6 text-soft">Periksa kembali tenggat di situs penyelenggara.</p><div id="grid-beasiswa" class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3"></div></section>
+  <section id="lomba" class="border-t border-line py-12"><h2 class="mb-1 font-display text-2xl font-bold text-primary-dark">Lomba dan kompetisi</h2><p class="mb-6 text-soft">Kompetisi yang masih berjalan.</p><div id="grid-lomba" class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3"></div></section>
+  <section id="karier" class="border-t border-line py-12"><h2 class="mb-1 font-display text-2xl font-bold text-primary-dark">Karier</h2><p class="mb-6 text-soft">Part-time dan magang di Malang.</p><div id="grid-karier" class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3"></div></section>
+  <section id="kos" class="border-t border-line py-12"><h2 class="mb-1 font-display text-2xl font-bold text-primary-dark">Kos mahasiswa</h2><p class="mb-6 text-soft">Hubungi pemilik untuk cek ketersediaan kamar.</p><div id="grid-kos" class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3"></div></section>
+  <section id="komunitas" class="border-t border-line py-12"><h2 class="mb-1 font-display text-2xl font-bold text-primary-dark">Komunitas</h2><p class="mb-6 text-soft">UKM dan organisasi yang aktif.</p><div id="grid-komunitas" class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3"></div></section>
+  <section id="kontak" class="border-t border-line py-12">
+    <h2 class="mb-1 font-display text-2xl font-bold text-primary-dark">Kontak</h2>
+    <p class="mb-6 text-soft">Punya info beasiswa atau lomba? Kirimkan ke kami.</p>
+    <form id="contact-form" novalidate class="grid max-w-xl gap-4 rounded-2xl border border-line bg-card p-6">
+      <div>
+        <label for="nama" class="mb-1 block text-sm font-semibold">Nama</label>
+        <input id="nama" name="nama" type="text" class="w-full rounded-lg border border-line bg-surface px-3 py-2" placeholder="Nama lengkap">
+        <p class="err mt-1 min-h-5 text-sm text-red-600" data-for="nama"></p>
+      </div>
+      <div>
+        <label for="email" class="mb-1 block text-sm font-semibold">Email</label>
+        <input id="email" name="email" type="email" class="w-full rounded-lg border border-line bg-surface px-3 py-2" placeholder="nama@email.com">
+        <p class="err mt-1 min-h-5 text-sm text-red-600" data-for="email"></p>
+      </div>
+      <div>
+        <label for="pesan" class="mb-1 block text-sm font-semibold">Pesan</label>
+        <textarea id="pesan" name="pesan" rows="4" class="w-full rounded-lg border border-line bg-surface px-3 py-2" placeholder="Tulis pesanmu (minimal 10 karakter)"></textarea>
+        <p class="err mt-1 min-h-5 text-sm text-red-600" data-for="pesan"></p>
+      </div>
+      <button type="submit" class="rounded-lg bg-accent px-5 py-2.5 font-semibold text-on-accent hover:brightness-105">Kirim pesan</button>
+      <p id="form-ok" class="min-h-5 text-sm font-semibold text-primary" role="status"></p>
+    </form>
+  </section>
+</main>
+
+<footer class="border-t border-line bg-card py-8 text-sm text-soft">
+  <div class="mx-auto max-w-6xl px-6">Ruang Kampus, dibuat untuk mahasiswa Malang.</div>
+</footer>
+
+<script src="app.js"></script>
+</body>
+</html>
